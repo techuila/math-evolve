@@ -3,12 +3,12 @@ import cors from '@fastify/cors';
 import helmet from '@fastify/helmet';
 import rateLimit from '@fastify/rate-limit';
 import jwt from '@fastify/jwt';
-import { authRoutes } from './routes/auth';
-import { studentRoutes } from './routes/students';
-import { topicRoutes } from './routes/topics';
-import { quizRoutes } from './routes/quizzes';
-import { testRoutes } from './routes/tests';
-import { adminRoutes } from './routes/admin';
+import { authRoutes } from './routes/auth.js';
+import { studentRoutes } from './routes/students.js';
+import { topicRoutes } from './routes/topics.js';
+import { quizRoutes } from './routes/quizzes.js';
+import { testRoutes } from './routes/tests.js';
+import { adminRoutes } from './routes/admin.js';
 
 export async function createApp() {
   const app = Fastify({
